@@ -2,26 +2,26 @@ let pokemonList = [
     {
         name: "Gengar",
         height: 1.5,
-        type: ['Ghost' , 'Poison']
+        types: ['Ghost']
     },
     {
         name: "Charizard",
         height: 1.7,
-        type: ['Fire' , 'Flying']
+        types: ['Fire']
     },
     {
         name: "Psyduck",
         height: 0.8,
-        type: 'water'
+        types: ['Water']
     },
     {
         name: "Bellossom",
         height: 0.4,
-        type: 'grass'
-    },
+        types: ['Grass']
+},
     {
         name: "Squirtle",
         height: 0.4,
-        type: ['Monster', 'Water']
+        types: ['Monster']
     }
 ];
