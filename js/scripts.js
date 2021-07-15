@@ -1,7 +1,7 @@
 // IIFE Part
-let pokemonRepository = (function () {
+const pokemonRepository = (function () {
 
-    let pokemonList = [{
+    const pokemonList = [{
         name: "Cubone",
         height: 0.4,
         types: ["Monster"],
@@ -28,8 +28,14 @@ let pokemonRepository = (function () {
     },
     ];
 
+    Object.keys(pokemonList).forEach(function(animal) {
+    console.log(pokemonList[animal])
+    });
+
     function add(pokemon) {
         pokemonList.push(pokemon);
+        //Add Object.keys for check add value of new pokemon
+        console.log(Object.keys(pokemon));
     }
 
     function getAll() {
@@ -40,22 +46,23 @@ let pokemonRepository = (function () {
         add: add,
         getAll: getAll,
     };
-
-
     
 })();
 
-pokemonRepository.add({
-    name: "Vulpix",
-    height: 0.6,
-    types: ["Drought"],
-});
 
-pokemonRepository.add({
-    name: "Igglybuff",
-    height: 0.3,
-    types: ["Fairy"],
-});
+// Test part for add new pokemon
+
+// pokemonRepository.add({
+//     name: "Vulpix",
+//     height: 0.6,
+//     types: ["Drought"],
+// });
+
+// pokemonRepository.add({
+//     name: "Igglybuff",
+//     height: 0.3,
+//     types: ["Fairy"],
+// });
 
 //Display all the pokemon info from array in console
 // console.log(pokemonRepository.getAll());
