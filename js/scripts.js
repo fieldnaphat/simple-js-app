@@ -28,14 +28,14 @@ const pokemonRepository = (function () {
     },
     ];
 
-    Object.keys(pokemonList).forEach(function(animal) {
-    console.log(pokemonList[animal])
-    });
 
     function add(pokemon) {
-        pokemonList.push(pokemon);
         //Add Object.keys for check add value of new pokemon
-        console.log(Object.keys(pokemon));
+        if (Object.keys(pokemon).includes('name')) {
+            pokemonList.push(pokemon);
+
+            console.log("Use Object.keys to check new pokemon", pokemon)
+        }
     }
 
     function getAll() {
@@ -77,9 +77,9 @@ pokemonRepository.getAll().forEach(function (pokemonList) {
 
     // Bonus Task
     //Object key
-    Object.keys(pokemonList).forEach(function (list) {
-        console.log(pokemonList[list]);
-    });
+    // Object.keys(pokemonList).forEach(function (list) {
+    //     console.log(pokemonList[list]);
+    // });
 
     // console.table(pokemonList);
 
