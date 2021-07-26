@@ -76,3 +76,100 @@ body {
     background-color: hsl(0, 88%, 45%);
 
 }
+
+
+/* Modal show more pokemon detail  */
+
+
+
+#modal-container {
+    /* width: 100%;
+    height: 5rem;
+    background-color: tan;
+    position: absolute;
+    top: 8rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    height: 5rem; */
+
+    position: fixed;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* to show it above other content */
+    z-index: 999; 
+    /* to allow scrolling if the screen is not high enough*/
+    overflow: auto; 
+    /* this is used to center the modal */
+    display: grid;
+    text-align: center;
+}
+
+
+
+.modal {
+    margin: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 15px;
+    width: 100%;
+    max-width: 700px;
+    text-align: left;
+}
+
+.modal-close {
+    float: right;
+    -webkit-appearance: none;
+    border: 0;
+    background: none;
+    color: #777;
+    text-decoration: none;
+    font-weight: 600;
+}
+.modal-close:hover {
+    color: tomato;
+}
+
+.modal h1 {
+    margin-top: 0;
+}
+
+.modal p {
+    margin-bottom: 0;
+}
+
+#modal-container {
+    display: none;
+}
+
+#modal-container.is-visible {
+    display: block;
+}
+
+/* Pokemon info in Modal  */
+
+.pokemonName {
+
+}
+
+.pokemonHeight {
+
+}
+
+.pokemonType {
+
+}
+
+.imgProfielContainer {
+
+}
+
+.pokemonProfileImg {
+    
+}
