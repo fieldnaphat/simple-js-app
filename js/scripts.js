@@ -118,12 +118,6 @@ const pokemonRepository = (function () {
             closeButtonElement.innerText = "X";
             closeButtonElement.addEventListener("click", hideModal);
 
-            let titleElement = document.createElement("h1");
-            titleElement.innerText = pokemon.name;
-
-            let contentElement = document.createElement("p");
-            contentElement.innerText = "cat";
-
             // Create pokemon info in Modal
             let pokemonName = document.createElement('h1');
             pokemonName.classList.add('pokemonName');
