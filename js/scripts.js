@@ -1,7 +1,5 @@
 // IIFE Part
 const pokemonRepository = (function () {
-    //Select to pokemon modal container
-    let modalContainer = document.querySelector("#modal-PokemonContainer");
     const pokemonList = [];
     let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
 
@@ -122,7 +120,6 @@ const pokemonRepository = (function () {
 
             let pokemonProfileImg = document.querySelector(".pokemonProfileImg");
             pokemonProfileImg.src = pokemon.imageUrl;
-            pokemonProfileImg.innerHTML = pokemonProfileImg;
 
     }
 
