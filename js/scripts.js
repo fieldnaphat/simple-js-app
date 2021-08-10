@@ -120,6 +120,7 @@ const pokemonRepository = (function () {
 
             let pokemonProfileImg = document.querySelector(".pokemonProfileImg");
             pokemonProfileImg.src = pokemon.imageUrl;
+            pokemonProfileImg.alt = pokemon.name;
 
     }
 
