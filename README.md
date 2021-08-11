@@ -1,14 +1,13 @@
 # JavaScript App (Pokédex)
 
+## Project Description
 
-Project Description
+Build a small web application with HTML, CSS, and JavaScript that loads data from an external [Pokémon API](https://pokeapi.co/docs/v2).API and enables the viewing of data points in detail.
 
-Build a small web application with HTML, CSS, and JavaScript that loads data from anexternal API and enables the viewing of data points in detail.
+## Tech stack
 
-Project Dependencies
-
-This Project uses
-
-- HTML
-- CSS
-- JavaScript
+* HTML
+* CSS
+* Bootstrap
+* JavaScript
+* jQuery
